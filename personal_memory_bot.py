@@ -23,7 +23,7 @@ from pypdf import PdfReader
 
 
 ## Define a function to parse a PDF file and extract its text content
-@st.cache_data
+@st.cache_resource
 def parse_pdf(file: BytesIO) -> List[str]:
     pdf = PdfReader(file)
     output = []
@@ -40,7 +40,7 @@ def parse_pdf(file: BytesIO) -> List[str]:
 
 
 ## Define a function to convert text content to a list of documents
-@st.cache_data
+@st.cache_resource
 def text_to_docs(text: str) -> List[Document]:
     """Converts a string or list of strings to a list of Documents
     with metadata."""
@@ -74,7 +74,7 @@ def text_to_docs(text: str) -> List[Document]:
 
 
 ## Define a function for the embeddings
-@st.cache_data
+@st.cache_resource
 def test_embed():
     embeddings = OpenAIEmbeddings(openai_api_key=api)
     # Indexing
