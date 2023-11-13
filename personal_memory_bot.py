@@ -7,7 +7,8 @@ from typing import Any, Dict, List
 
 import openai
 import streamlit as st
-from langchain import LLMChain, OpenAI
+from langchain.chains import LLMChain
+from langchain.chat_models import ChatOpenAI
 from langchain.agents import AgentExecutor, Tool, ZeroShotAgent
 from langchain.chains import RetrievalQA
 from langchain.chains.question_answering import load_qa_chain
@@ -166,7 +167,7 @@ if uploaded_file:
                 )
 
             llm_chain = LLMChain(
-                llm=OpenAI(
+                llm=ChatOpenAI(
                     temperature=0, openai_api_key=api, model_name="gpt-3.5-turbo"
                 ),
                 prompt=prompt,
