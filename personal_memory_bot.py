@@ -5,8 +5,6 @@ from io import BytesIO
 from typing import Any, Dict, List
 
 
-import os
-import sys
 import openai
 import streamlit as st
 from langchain import LLMChain, OpenAI
@@ -22,14 +20,6 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import VectorStore
 from langchain.vectorstores.faiss import FAISS
 from pypdf import PdfReader
-
-# OpenAI API key
-sys.path.append('../..')
-
-from dotenv import load_dotenv, find_dotenv
-_ = load_dotenv(find_dotenv()) # read local .env file
-
-openai.api_key  = os.environ['OPENAI_API_KEY']
 
 
 ## Define a function to parse a PDF file and extract its text content
