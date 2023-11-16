@@ -17,10 +17,10 @@
 https://personal-bot.streamlit.app/
 
 ## Check out the demo video 
-
+https://youtu.be/uzY94nECBg0
 
 ## Detailed blog post
-
+https://hahoangpro.wixsite.com/datascience/post/building-a-conversational-chatbot-with-memory-for-your-pdfs
 
 ## Additional projects
 https://hahoangpro.wixsite.com/datascience/blog
