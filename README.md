@@ -7,7 +7,7 @@
 
 ## Code and Resources Used
 **Python Version:** 3.11 <br>
-**Packages:** openai, langchain, streamlit <br>
+**Packages:** openai, langchain, streamlit, pypdf <br>
 **Web Framework Requirements:** ``pip install -r requirements.txt`` <br>
 **Streamlit Documentation**: https://docs.streamlit.io/ <br>
 **LangChain Documentation**: https://api.python.langchain.com/en/latest/api_reference.html<br>
