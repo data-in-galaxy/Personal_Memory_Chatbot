@@ -10,8 +10,8 @@
 **Packages:** openai, langchain, streamlit <br>
 **Web Framework Requirements:** ``pip install -r requirements.txt`` <br>
 **Streamlit Documentation**: https://docs.streamlit.io/ <br>
-**LangChain Documentation**: https://api.python.langchain.com/en/latest/api_reference.html
-**LangChain GitHub**: https://github.com/langchain-ai
+**LangChain Documentation**: https://api.python.langchain.com/en/latest/api_reference.html<br>
+**LangChain GitHub**: https://github.com/langchain-ai<br>
 
 ## Check out the app here
 https://personal-bot.streamlit.app/
